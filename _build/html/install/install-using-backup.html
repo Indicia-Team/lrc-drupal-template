@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installing the LRC Drupal Template from backup &mdash; LRC Drupal Template 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="LRC Drupal Template 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Installing the LRC Drupal Template" href="index.html" />
+    <link rel="next" title="Post installation steps" href="post-install.html" />
+    <link rel="prev" title="Preparing to install the LRC Drupal Template site" href="preparation.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="post-install.html" title="Post installation steps"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="preparation.html" title="Preparing to install the LRC Drupal Template site"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">LRC Drupal Template 1.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Installing the LRC Drupal Template</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="installing-the-lrc-drupal-template-from-backup">
+<h1>Installing the LRC Drupal Template from backup<a class="headerlink" href="#installing-the-lrc-drupal-template-from-backup" title="Permalink to this headline">¶</a></h1>
+<p>The LRC Drupal Template can be installed from a backup of the site. This is the simplest
+way to get started. The site backup is provided as 2 files:</p>
+<ul class="simple">
+<li><strong>lrctemplate.zip</strong> - a backup of the folder structure required by Drupal. This is the
+same as a download of Drupal from <a class="reference external" href="http://drupal.org">drupal.org</a> but with the
+addition of a number of modules and theme files required by the LRC Drupal Template.</li>
+<li><strong>lrctemplate.mysql.gz</strong> - a backup of the MySQL database.</li>
+</ul>
+<p>The first step is to unzip your <strong>lrctemplate.zip</strong> file into the place you want your
+website files to run from, as dictated by the web server setup. For this illustration,
+I&#8217;ve made a folder called <strong>lrc</strong> in the web root folder of an installation of <strong>XAMPP</strong>
+running on OS X. This means that my development site copy will be available at
+<tt class="docutils literal"><span class="pre">http://localhost/lrc</span></tt>. Into this folder, I&#8217;ve unzipped the <strong>lrctemplate.zip</strong> file so
+that the folder structure is as follows:</p>
+<img alt="../_images/drupal-folder-structure.png" src="../_images/drupal-folder-structure.png" style="width: 600px;" />
+<p>Note that I&#8217;ve also created a MySQL database called <strong>lrc</strong> and user account ready to
+install against as described in the <a class="reference internal" href="preparation.html"><em>previous step</em></a>.</p>
+<div class="section" id="file-permissions">
+<h2>File permissions<a class="headerlink" href="#file-permissions" title="Permalink to this headline">¶</a></h2>
+<p>Depending on your operating system, you may need to change file permissions to get Drupal
+to run properly. The Drupal folder and its contents should generally be all read-only to
+the web server process with a few exceptions:</p>
+<ul class="simple">
+<li>The <tt class="docutils literal"><span class="pre">sites/default/files</span></tt> folder should be writeable.</li>
+<li>The <tt class="docutils literal"><span class="pre">sites/all/modules/iform/client_helpers/cache</span></tt> folder should be writeable.</li>
+<li>The <tt class="docutils literal"><span class="pre">sites/all/modules/iform/client_helpers/upload</span></tt> folder should be writeable.</li>
+</ul>
+<p>You should also at this point copy the file <tt class="docutils literal"><span class="pre">default.settings.php</span></tt> and rename the new
+file <tt class="docutils literal"><span class="pre">settings.php</span></tt>. This latter file will need to be writeable during the installation
+process only.</p>
+</div>
+<div class="section" id="drupal-installation">
+<h2>Drupal installation<a class="headerlink" href="#drupal-installation" title="Permalink to this headline">¶</a></h2>
+<p>Now you are ready to run the Drupal installation script. This process is exactly the same
+as any other installation of Drupal, so you can <a class="reference external" href="https://drupal.org/documentation/install/run-script">refer to the standard documentation</a>. Follow the steps described for
+Drupal 7 installation. Don&#8217;t forget to make a note of the <strong>site maintenance account</strong>
+details you specify in the installation wizard, as these are used to gain full access to
+the site.</p>
+<p>Once the script has completed, you&#8217;ll be presented with a <strong>Visit your new site</strong> link so
+click on this to enter the site proper.</p>
+<img alt="../_images/drupal-after-install-script.png" src="../_images/drupal-after-install-script.png" style="width: 800px;" />
+</div>
+<div class="section" id="restoring-the-site-database-backup">
+<h2>Restoring the site database backup<a class="headerlink" href="#restoring-the-site-database-backup" title="Permalink to this headline">¶</a></h2>
+<p>At the moment, you&#8217;ve got a basic installation of Drupal with the default Drupal theme,
+with no content, menus, custom modules, online recording facilities or themes setup.
+Fortunately all the files required for all this are already in place, so we just need to
+restore the MySQL database which holds all the configuration information required. The
+backup and restore process used here depends on a module called <a class="reference external" href="https://drupal.org/project/backup_migrate">Backup &amp; Migrate</a> so the first thing we need to do is to
+enable this module.</p>
+<ol class="arabic">
+<li><p class="first">Click on the <strong>Modules</strong> menu item in the black menu bar across the top of the page.
+We&#8217;ll refer to this as the <strong>admin toolbar</strong> from now on.</p>
+</li>
+<li><p class="first">You are now looking at a list of all the downloaded modules for Drupal with the
+enabled modules ticked. There are of course many more modules available on
+<a class="reference external" href="http://drupal.org">drupal.org</a>. Search for the module called <strong>Backup and Migrate</strong>
+then tick it:</p>
+<img alt="../_images/drupal-installing-backup-migrate.png" src="../_images/drupal-installing-backup-migrate.png" style="width: 800px;" />
+</li>
+<li><p class="first">Scroll to the bottom of the page and click <strong>Save configuration</strong>.</p>
+</li>
+<li><p class="first"><strong>Backup and Migrate</strong> will add an extra page to your website allowing administrators
+to backup and restore the MySQL database which drives the website. To access this page,
+click <strong>Configuration</strong> on the admin toolbar, then find and click the <strong>Backup and
+Migrate</strong> link on the right of the page.</p>
+</li>
+<li><p class="first">We want to restore a database, so click the <strong>Restore</strong> tab.</p>
+<img alt="../_images/drupal-backup-migrate-restore.png" src="../_images/drupal-backup-migrate-restore.png" style="width: 800px;" />
+</li>
+<li><p class="first">Click the <strong>Choose file</strong> button then browse to and select the <strong>lrctemplate.mysql.gz</strong>
+file.</p>
+</li>
+<li><p class="first">Click <strong>Restore now</strong>.</p>
+</li>
+</ol>
+<p>That&#8217;s the basic install process done. You can skip forward to the <a class="reference internal" href="post-install.html"><em>Post installation steps</em></a>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Installing the LRC Drupal Template from backup</a><ul>
+<li><a class="reference internal" href="#file-permissions">File permissions</a></li>
+<li><a class="reference internal" href="#drupal-installation">Drupal installation</a></li>
+<li><a class="reference internal" href="#restoring-the-site-database-backup">Restoring the site database backup</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="preparation.html"
+                        title="previous chapter">Preparing to install the LRC Drupal Template site</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="post-install.html"
+                        title="next chapter">Post installation steps</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/install/install-using-backup.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="post-install.html" title="Post installation steps"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="preparation.html" title="Preparing to install the LRC Drupal Template site"
+             >previous</a> |</li>
+        <li><a href="../index.html">LRC Drupal Template 1.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" >Installing the LRC Drupal Template</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Indicia Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
