@@ -154,7 +154,7 @@ theme. So, let's see how to apply minor CSS tweaks to the site:
 #. Scroll down to the **Extensions** section, then click on the **Custom CSS tab**.
 #. Paste the following into the text box, replacing the existing content.
 
-  .. code-block:: CSS
+  .. code-block:: css
   
     header#header .menu a {
       color: #FFFFFF;
