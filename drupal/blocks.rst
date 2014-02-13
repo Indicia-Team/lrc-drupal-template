@@ -68,4 +68,7 @@ things up:
    .. image:: ../images/drupal-blocks-menu-footer-2.png
     :width: 800px
     
-Feel free to experiment!
+Feel free to experiment! If you want to know more about Blocks, then there are some handy
+resources online, such as `Drupal Garden 
+<http://www.drupalgardens.com/documentation/blocks>`_ and the `Drupal Community
+documentation `https://drupal.org/documentation/blocks>`_.
