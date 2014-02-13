@@ -1,3 +1,0 @@
-Install using Drush
-===================
-
