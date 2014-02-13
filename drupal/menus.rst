@@ -53,9 +53,9 @@ After saving the menu settings, Drupal takes you to the currently empty list of 
 click the **Add Link** button to start populating our menu. Add a link to the existing 
 **Contact us** page by filling in the following settings:
 
-* **Menu link title**=Contact us
-* **Path**=about/contact
-* **Description**=Contact this record centre
+* Set **Menu link title** to "Contact us"
+* Set **Path** to "about/contact"
+* Set **Description** to "Contact this record centre".
 
 Leave the other settings as they are.
 

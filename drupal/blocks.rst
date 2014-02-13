@@ -71,4 +71,4 @@ things up:
 Feel free to experiment! If you want to know more about Blocks, then there are some handy
 resources online, such as `Drupal Garden 
 <http://www.drupalgardens.com/documentation/blocks>`_ and the `Drupal Community
-documentation `https://drupal.org/documentation/blocks>`_.
+documentation <https://drupal.org/documentation/blocks>`_.
