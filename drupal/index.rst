@@ -13,9 +13,7 @@ need in order to populate the site's content.
   menus
   blocks
   views
-  views-tutorial
   panels
   panels-tutorial
   administration
-  test
   
