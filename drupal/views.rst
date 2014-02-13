@@ -20,16 +20,18 @@ Think of Views as a custom report builder, though note that Views works against 
 content not Indicia wildlife records - we have different methods for reporting on records. 
 
 .. figure:: ../images/drupal-views-example-gallery.png
-  :width: 600px 
+  :width: 800px 
   :alt: A gallery view from the NatureSpot website
   
   The Latest Images page from NatureSpot is a good example of a Drupal View.
   
-Since views are such a powerful aspect of Drupal, please take the time to read through
-the thorough documentation on `Drupal Garden 
-<http://www.drupalgardens.com/documentation/views>`_ and ensure you run through the
-`views tutorials <http://www.drupalgardens.com/documentation/views/tutorial>`_ on that 
-site.
+.. note::
+
+  Since views are such a powerful aspect of Drupal, please take the time to read through
+  the thorough documentation on `Drupal Garden 
+  <http://www.drupalgardens.com/documentation/views>`_ and ensure you run through the
+  `views tutorials <http://www.drupalgardens.com/documentation/views/tutorial>`_ on that 
+  site.
 
 
 
