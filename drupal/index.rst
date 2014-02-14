@@ -15,5 +15,5 @@ need in order to populate the site's content.
   views
   panels
   panels-tutorial
-  administration
+  users-permissions
   
