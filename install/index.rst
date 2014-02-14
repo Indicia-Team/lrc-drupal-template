@@ -5,8 +5,6 @@ Installing the LRC Drupal Template
 
   preparation
   install-using-backup
-  install-using-drush
   post-install
-  upgrade-existing-site
   
   
