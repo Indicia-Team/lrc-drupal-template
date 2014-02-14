@@ -30,7 +30,7 @@ the list, so that we can add this view to our page.
 #. Set the **Path** to "home".
 #. Tick the **Make this your site home page** checkbox.
 
-   .. figure:: ../images/drupal-panels-step-1.png
+   .. image:: ../images/drupal-panels-step-1.png
      :width: 800px 
      :alt: Setting up the basic properties of a panels page
 
@@ -41,7 +41,7 @@ the list, so that we can add this view to our page.
    Since we want to use a 2 column layout, choose the **AT Responsive Panels - 2 column**
    category and the **AT Two Column 50/50** layout. 
 
-   .. figure:: ../images/drupal-panels-step-2.png
+   .. image:: ../images/drupal-panels-step-2.png
      :width: 600px 
      :alt: Choosing the layout of a panels page
      
@@ -56,11 +56,9 @@ the list, so that we can add this view to our page.
 #. The next page is the content editor for our page. It shows a wireframe of the panels 
    layout we have chosen and allows you to insert any content you like into each region.
    
-   .. figure:: ../images/drupal-panels-step-3.png
+   .. image:: ../images/drupal-panels-step-3.png
      :width: 800px 
      :alt: Panels layout wireframe ready to add content to
-     
-     Panels layout wireframe ready to add content to.
    
 #. In the region called **Left**, click the cog icon on the left and select **Add 
    content** from the popup menu.
@@ -69,11 +67,9 @@ the list, so that we can add this view to our page.
 #. In the following configuration page, set the **Administrative title** to 
    "Introduction" and enter some introductory/welcome text in the **Body** box:
    
-   .. figure:: ../images/drupal-panels-text-content.png
+   .. image:: ../images/drupal-panels-text-content.png
      :width: 800px 
      :alt: Adding a custom text content pane
-     
-     Adding a custom text content pane.
      
    Save the content when you are done by clicking the **Finish** button to return to the 
    view of the panels layout wireframe.
@@ -95,11 +91,9 @@ the list, so that we can add this view to our page.
 If you've followed the tutorial to the letter, you will end up with a home page along the
 lines of the following:
 
-.. figure:: ../images/drupal-panels-home-1.png
+.. image:: ../images/drupal-panels-home-1.png
   :width: 800px 
   :alt: The home page panel layout with left column output
-  
-  The home page panel layout with left column output.
   
 Notice that our **Front page** view is not outputting any content at the moment. This is
 because the view is configured to only output content that has been **promoted to front
@@ -108,11 +102,9 @@ of the page, then choose **Article** which by default will be promoted to the fr
 Set a suitable title and body text for your article then save the content and return to the
 home page to check that it appears.
 
-.. figure:: ../images/drupal-panels-home-2.png
+.. image:: ../images/drupal-panels-home-2.png
   :width: 800px 
   :alt: The home page panel layout with left  and right column output
-  
-  The home page panel layout with left  and right column output.
   
 This has just been a quick introduction to panels. Panels can output all types of content
 including:

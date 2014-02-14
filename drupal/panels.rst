@@ -32,9 +32,9 @@ experience of your website, including:
   type. For example, you could create a "Species Account" content type with it's own set
   of fields and corresponding **Panels** layout.
   
-.. figure:: ../images/irecord-home.png
+.. image:: ../images/irecord-home.png
   :width: 800px 
   :alt: The iRecord home page panels layout
-  
-  The `iRecord <http://www.brc.ac.uk/irecord>`_ home page is an example of a panel layout.
+
+The `iRecord <http://www.brc.ac.uk/irecord>`_ home page is an example of a panel layout.
 

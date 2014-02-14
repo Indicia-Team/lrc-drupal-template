@@ -36,10 +36,8 @@ Follow these steps to register a new survey for recording on the warehouse.
 #. Select your website in the **Website** drop down, to associate the survey with your
    own website registration.
    
-   .. figure:: ../images/warehouse-adding-survey.png
+   .. image:: ../images/warehouse-adding-survey.png
      :width: 800px 
      :alt: Adding our new amphibian survey
-     
-     Adding our new amphibian survey.
      
 #. Click the **Save** button.

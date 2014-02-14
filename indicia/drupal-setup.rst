@@ -6,11 +6,9 @@ recording form to our website. Back in your Drupal site, select the **Add conten
 which should be in the **shortcuts area** near the top left of the page. Select to add an
 **Indicia page**. 
 
-.. figure:: ../images/iform-selecting-page-type.png
+.. image:: ../images/iform-selecting-page-type.png
   :width: 800px 
   :alt: Selecting to add an Indicia page
-  
-  Selecting to add an Indicia page.
   
 You will now be presented with the edit page allowing you to add new content to Drupal.
 It has exactly the same options as you've seen early for other Drupal content types such
@@ -22,11 +20,9 @@ we want this form to be promoted via the front page rather than hidden in the me
 click on **URL path settings** and set the **URL alias** to "spot-the-amphibian" so that
 the URL is nice and memorable.
 
-.. figure:: ../images/iform-page-drupal-options.png
+.. image:: ../images/iform-page-drupal-options.png
   :width: 800px 
   :alt: Configuring the Drupal options for an Indicia page
-  
-  Configuring the Drupal options for an Indicia page.
   
 So far everything we've done on this page has been standard Drupal configuration but we
 are about to dive into setting up the Indicia aspects of the form. In the **Form
@@ -39,11 +35,9 @@ choose "Sample with occurrences form". This is a really flexible Indicia powered
 which can be configured to support a wide range of survey datasets and is the best
 choice generally as a starting point for building your survey forms.
 
-.. figure:: ../images/iform-select-prebuilt-form.png
+.. image:: ../images/iform-select-prebuilt-form.png
   :width: 800px 
   :alt: Selecting a prebuilt form to use
-  
-  Selecting a prebuilt form to use.
 
 Now, click the **Load Settings Form** button. This requests the configuration parameters
 from the server and in a moment or two, injects the configuration form into the Drupal 
@@ -76,11 +70,9 @@ are a list of the relevant settings you need to configure for our survey:
 Now scroll to the bottom and click the **Save page** button. You should have a slightly
 untidy but working form:
 
-.. figure:: ../images/iform-amphib-form-1.png
+.. image:: ../images/iform-amphib-form-1.png
   :width: 800px 
   :alt: Our first attempt at a Spot the Amphibian form
-  
-  Our first attempt at a Spot the Amphibian form.
 
 Although it should be functional, having three different tabs to navigate through for such
 a simple form is somewhat overkill. To fix this, click the **Edit** button then scroll 
@@ -89,11 +81,9 @@ down to find the **User Interface** section. Change the **Interface Style Option
 form onto a single page, but the form is still rather untidy and the map is very 
 dominant:
 
-.. figure:: ../images/iform-amphib-form-2.png
+.. image:: ../images/iform-amphib-form-2.png
   :width: 800px 
   :alt: Our second attempt at a Spot the Amphibian form
-  
-  Our second attempt at a Spot the Amphibian form with all controls on a single page.
 
 Click the **Edit** button again and find the **Initial Map View** section. Change the
 **Map Height (px)** control to "450". Before you save the page, scroll down to the **User
@@ -138,10 +128,8 @@ replacing the existing content, to reformat the layout of the form::
   [map]
   =*=
   
-.. figure:: ../images/iform-amphib-form-3.png
+.. image:: ../images/iform-amphib-form-3.png
   :width: 800px 
   :alt: Our final Spot the Amphibian form
-  
-  Our final Spot the Amphibian form with improved layout.
 
 That's better! 

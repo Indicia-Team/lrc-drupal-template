@@ -88,7 +88,7 @@ When configuring permissions, you can view or edit all the roles and permissions
 big grid by selecting **People** from the **admin toolbar** then clicking on the 
 **Permissions** tab in the top right. 
 
-.. figure:: ../images/drupal-permissions-grid.png
+.. image:: ../images/drupal-permissions-grid.png
   :width: 800px 
   :alt: The list of roles
 
@@ -112,11 +112,9 @@ to our **site editor** group. Ensure that you are logged in as admin first.
 #. In the **Permission name for view access control** box, enter "view all records". 
    This will create a new permission that we must then link to the appropriate role(s).
    
-   .. figure:: ../images/iform-view-access-control.png
+   .. image:: ../images/iform-view-access-control.png
      :width: 800px 
      :alt: Setting view access permissions for an Indicia page
-     
-     Setting view access permissions for an Indicia page.
      
 #. Scroll to the bottom of the configuration form and save it.
 #. Since you are logged in as admin, you can see the form still even though you we haven't
@@ -127,11 +125,9 @@ to our **site editor** group. Ensure that you are logged in as admin first.
    the top right of the page. 
 #. Search on this page for the **Indicia form module**'s "view all records" permission. 
 
-   .. figure:: ../images/drupal-setting-role-permission.png
+   .. image:: ../images/drupal-setting-role-permission.png
      :width: 800px 
      :alt: Setting site editor's access to view all records
-     
-     Setting site editor's access to view all records.
      
 #. Now, scroll to the bottom of the page and save the permissions.
 
@@ -166,10 +162,8 @@ cancellation** section, you can change the account registration so that:
 * visitors can register by email verification is required
 * visitors can register but admin approval is required.
 
-.. figure:: ../images/drupal-user-registration-options.png
+.. image:: ../images/drupal-user-registration-options.png
      :width: 800px 
      :alt: Options for user registration
-     
-     Options for the user registration process.
 
 Have a think about which is most appropriate for the usage of your site.

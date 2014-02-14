@@ -19,11 +19,11 @@ lists of items might be:
 Think of Views as a custom report builder, though note that Views works against Drupal
 content not Indicia wildlife records - we have different methods for reporting on records. 
 
-.. figure:: ../images/drupal-views-example-gallery.png
+.. image:: ../images/drupal-views-example-gallery.png
   :width: 800px 
   :alt: A gallery view from the NatureSpot website
   
-  The Latest Images page from NatureSpot is a good example of a Drupal View.
+The Latest Images page from NatureSpot is a good example of a Drupal View.
   
 .. note::
 
