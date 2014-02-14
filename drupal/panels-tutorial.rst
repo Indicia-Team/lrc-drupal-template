@@ -128,4 +128,6 @@ including:
 As usual with anything Drupal, there is *lots* of further reading available on the 
 internet. Try the `drupalize.me article 
 <http://drupalize.me/series/building-websites-drupal-7-using-panels>`_ if you want to take 
-this further.
+this further. There is also a `tutorial showing how iRecord's home page was built 
+<http://indicia-docs.readthedocs.org/en/latest/site-building/instant-indicia/example-setups/irecord-walkthrough/home-page.html>`_
+in Drupal 6.
