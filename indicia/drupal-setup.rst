@@ -137,5 +137,11 @@ replacing the existing content, to reformat the layout of the form::
   [place search]
   [map]
   =*=
+  
+.. figure:: ../images/iform-amphib-form-3.png
+  :width: 800px 
+  :alt: Our final Spot the Amphibian form
+  
+  Our final Spot the Amphibian form with improved layout.
 
 That's better! 
