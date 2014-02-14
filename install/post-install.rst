@@ -140,13 +140,16 @@ which records will be stored.
   might capture a DAFOR abundance. In our case, we'll start out with a casual survey for
   ad-hoc sightings, but will learn how to setup other surveys later.
   
-As part of the initial setup required to get the **LRC Drupal Template** site up and 
-running, you will need to ask someone with access to the warehouse database to clone the 
-template survey for you. This can be done with the following database query:
+As part of the initial setup required to get the **LRC Drupal Template** site up and
+running, you will need to ask someone with access to the warehouse database to clone the
+template survey for you. The survey must be created first using the warehouse user
+interface. Setting up the survey's structure can be done with the following database query
+which is correct for the live BRC Community Warehouse, replacing *n* with the ID of the
+survey you created:
 
 .. code-block:: sql
 
-  TO DO
+  select indicia.f_clone_survey(185, n, 1)
   
 Once the survey exists on the warehouse, we need to link the survey to our recording 
 forms. From your site's home page, select **Wildlife recording** from the main menu, then
