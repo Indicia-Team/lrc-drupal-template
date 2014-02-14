@@ -43,6 +43,8 @@ too much about the details of this yet, just follow these steps:
 Clean URLS
 ----------
 
+
+
 Drupal allows the URL your pages are accessed via to be made more readable. For example,
 the URL ``http://www.example.com/?q=my-page`` can be rewritten as 
 ``http://www.example.com/my-page``, making the URLs easier to remember. This setting
@@ -52,7 +54,7 @@ then click the **Clean URLS** link in the **Search and metadata** section. Your 
 either detect that clean URLs are supported, in which case you can just click the **Enable
 Clean URLs** checkbox and click the **Save configuration** button, or if Drupal thinks
 that clean URLs are not supported then you will be presented with a **Run the clean URL
-test** button. Refer to the ``Drupal handbook <http://drupal.org/node/15365>``_ for more
+test** button. Refer to the `Drupal handbook <http://drupal.org/node/15365>`_ for more
 information in this case.
 
 Cron
